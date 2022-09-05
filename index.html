@@ -1,2 +1,10 @@
 <h1>Welcome to my website</h1>
-<script>alert('ss');</script>
+<script>
+// http://localhost/multiurlqr/index.html?url=demo&app=shopzon
+var url = new URL(window.location.href);
+var path = url.searchParams.get("url");
+var app = url.searchParams.get("app");
+alert(path);
+console.log(url);
+alert(app);
+</script>
